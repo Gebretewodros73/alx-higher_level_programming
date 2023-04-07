@@ -1,0 +1,16 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Tewodros", "Gebre")
+My name is Tewodros Gebre
+
+>>> say_my_name("Kalkidan")
+My name is Kalkidan 
+
+>>> say_my_name("simren", 1)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+>>> say_my_name(2, "Amen")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
