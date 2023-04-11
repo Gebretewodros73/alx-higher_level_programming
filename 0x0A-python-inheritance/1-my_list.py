@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module documentation - MyList class"""
+
+
 class MyList(list):
     """
     MyList class that inherits from list.
