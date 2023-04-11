@@ -8,5 +8,6 @@ def is_kind_of_class(obj, a_class):
     """
     Returns True if it is an instance or class of the given
     """
+
     if isinstance(obj, a_class):
         return True
