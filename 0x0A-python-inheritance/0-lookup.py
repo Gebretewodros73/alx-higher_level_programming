@@ -13,4 +13,6 @@ def lookup(obj):
     Return:
         A list of strings containing the available attributes and methods
     """
-    return sorted(vars(obj))
+    #return sorted(vars(obj))
+    
+    return [attr for attr in dir(obj) if not callable(getattr(obj, attr)) or attr.startswith('__')]
