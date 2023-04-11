@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def lookup(objec):
+def lookup(obj):
     """
     Return the list of available attributes and methods of and objects.
 
@@ -10,14 +10,5 @@ def lookup(objec):
 
     Return:
         A list of strings containing the available attributes and methods
-    
-    for name, value in inspect.getmembers(objec):
-        if name.startswith('__') and name.endswith('__'):
-            continue
-        elif inspect.ismethod(value):
-            methods.append(name)
-        else:
-            attributes.append(name)
-    return attributes + methods
     """
-    return sorted(vars(objec))
+    return sorted(vars(obj))
