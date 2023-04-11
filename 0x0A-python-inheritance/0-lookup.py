@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""define a method to lookup on objects"""
+
+
 def lookup(obj):
     """
     Return the list of available attributes and methods of and objects.
