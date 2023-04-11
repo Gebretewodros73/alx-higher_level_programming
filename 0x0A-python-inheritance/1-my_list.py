@@ -17,4 +17,6 @@ class MyList(list):
         """
         prints the list sorted in ascending order.
         """
+        if not all(isinstance(i, int) for i in self):
+            raise TypeError("List must be integers")
         print(sorted(self))
