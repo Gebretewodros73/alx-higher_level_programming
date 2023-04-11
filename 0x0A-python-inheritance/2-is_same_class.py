@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module documentation - identify the class
+Module documentation - identify the instance of a class
 """
 
 
