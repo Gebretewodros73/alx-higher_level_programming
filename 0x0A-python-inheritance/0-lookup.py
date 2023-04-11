@@ -10,5 +10,14 @@ def lookup(objec):
 
     Return:
         A list of strings containing the available attributes and methods
+    
+    for name, value in inspect.getmembers(objec):
+        if name.startswith('__') and name.endswith('__'):
+            continue
+        elif inspect.ismethod(value):
+            methods.append(name)
+        else:
+            attributes.append(name)
+    return attributes + methods
     """
-    return [att for att in dir(objec)]
+    return list(objec.__class__.__dict__)
