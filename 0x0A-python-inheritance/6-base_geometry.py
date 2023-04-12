@@ -11,7 +11,7 @@ class BaseGeometry():
 
     def area(self):
         """
-        Define area with out any implementation
+        define area with out any implementation
         """
 
         raise TypeError("area() is not implemented")
