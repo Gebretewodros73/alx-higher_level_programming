@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+
 """
 Module documentation - returns the JSON representation
 """
