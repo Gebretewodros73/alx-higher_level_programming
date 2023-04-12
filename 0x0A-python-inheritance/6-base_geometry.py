@@ -14,4 +14,5 @@ class BaseGeometry():
         define area with out any implementation
         """
 
-        raise NotImplementedError("area() is not implemented")
+        pass
+    raise NotImplementedError("area() is not implemented")
