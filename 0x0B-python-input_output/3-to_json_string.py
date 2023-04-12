@@ -21,7 +21,9 @@ def to_json_string(my_obj):
     elif isinstance(my_obj, str):
         return '"' + my_obj + '"'
     elif isinstance(my_obj, (list, tuple)):
-        json_list = [to_json_string(elem) for elem in my_obj]
+        json_list = []
+        for elem in my_obj:
+            json_list.append(f'{to_json_string(elem)}')
         return "[" + ", ".join(json_list) + "]"
     elif isinstance(my_obj, dict):
         json_dict = []
