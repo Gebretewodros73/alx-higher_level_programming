@@ -6,7 +6,13 @@ Module documentation - returns the JSON representation
 
 def to_json_string(my_obj):
     """
-    in python object representation of json
+    object representation of json in python
+
+    Args:
+        my_obj(any): any object(string) to be listed as JSON
+
+    Return:
+        JSON representation of object(string)
     """
     if my_obj is None:
         return
