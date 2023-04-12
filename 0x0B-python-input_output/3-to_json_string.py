@@ -5,6 +5,7 @@ Module documentation - returns the JSON representation
 
 
 def to_json_string(my_obj):
+
     """
     object representation of json in python
 
