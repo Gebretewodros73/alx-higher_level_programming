@@ -15,7 +15,7 @@ def to_json_string(my_obj):
         JSON representation of object(string)
     """
     if my_obj is None:
-        return
+        return "null"
     elif isinstance(my_obj, (int, float)):
         return str(my_obj)
     elif isinstance(my_obj, str):
@@ -30,3 +30,5 @@ def to_json_string(my_obj):
         return "{" + ", ".join(json_dict) + "}"
     elif isinstance(my_obj, bool):
         return "true" if my_obj else "false"
+    else:
+        raise TypeError(f"{my_obj} is not JSON serializable")
