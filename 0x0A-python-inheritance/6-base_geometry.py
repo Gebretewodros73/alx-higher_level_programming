@@ -9,7 +9,7 @@ class BaseGeometry():
     BaseGeometry defined with module of area
     """
 
-    def __init__area(self):
+    def area(self):
         """
         define area with out any implementation
         """
