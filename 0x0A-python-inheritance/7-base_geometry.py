@@ -14,14 +14,13 @@ class BaseGeometry():
         define area with out any implementation
         """
 
-        raise NotImplementedError("area() is not implemented")
-
+        raise Exception("area() is not implemented")
+    
     def integer_validator(self, name, value):
         """
-        returns the valueeror and typeerror
+        validates and integer value
         """
-
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
-        if self.value <= 0:
+        if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
