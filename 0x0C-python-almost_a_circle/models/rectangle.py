@@ -58,7 +58,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """ Set x attribute """
-        
+
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -74,7 +74,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ Set attribute """
-        
+
         if isinstance(value, int):
             raise TypeError("y must be and integer")
         elif value < 0:
