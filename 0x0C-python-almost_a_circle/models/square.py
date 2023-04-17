@@ -30,9 +30,9 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """ update key/value representation for square """
         if args is not None and len(args) != 0:
-            attributes = ["id", "size", "x", "y"]
+            attrs = ["id", "size", "x", "y"]
             for i in range(len(args)):
-                setattr(self, attributes[i], arg[i])
+                setattr(self, attrs[i], args[i])
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
