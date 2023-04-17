@@ -4,6 +4,7 @@ Module documentation : base class to all other
 classes which handle id attribute
 """
 import json
+import csv
 
 
 class Base:
@@ -69,5 +70,35 @@ class Base:
             with open(filename, "r") as f:
                 instances = cls.from_json_string(f.read())
                 return [cls.create(**inst) for inst in instances]
+        except FileNotFoundError:
+            return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ list objects to CSV file serialization """
+        filename = cls.__name__ + ".csv"
+        with open(filename, mode='w', encoding='utf-8') as f:
+            if cls.__name__ == "Rectangle":
+                fieldnames = ["id", "width", "height", "x", "y"]
+            elif cls.__name__ == "Square":
+                fieldnames = ["id", "size", "x", "y"]
+            writer = csv.DictWriter(f, fieldnames)
+            writer.writeheader()
+            for obj in list_objs:
+                writer.writerow(obj.to_dictionary())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ from CSV file to list objects deserialization """
+        filename = cls.__name__ + ".csv"
+        inst_list = []
+        try:
+            with open(filename, mode='r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    for key, value in row.items():
+                        row[key] = int(value)
+                    inst_list.append(cls.create(**row))
+                return inst_list
         except FileNotFoundError:
             return []
