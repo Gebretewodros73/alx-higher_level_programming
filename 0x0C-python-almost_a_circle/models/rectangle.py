@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from models.base import Base
 """
 Module Documentation : Rectangle class
 """
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -18,6 +18,15 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def validate(self, name, value):
+        """ validate all values """
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if (name == "width" or name == "height") and value <= 0:
+            raise ValueError(f"{name} must be > 0")
+        if (name == "x" or name == "y") and value < 0:
+            raise TypeError(f"{name} must be >= 0")
+
     @property
     def width(self):
         """ Get width attribute with getter method """
@@ -26,13 +35,8 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """ Set width attribute with setter method """
-
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        elif value <= 0:
-            raise ValueError("width must be > 0")
-        else:
-            self.__width = value
+        self.validate("width", value)
+        self.__width = value
 
     @property
     def height(self):
@@ -42,13 +46,8 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """ Set width attribute """
-
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        elif value <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__height = value
+        self.validate("height", value)
+        self.__height = value
 
     @property
     def x(self):
@@ -58,13 +57,8 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """ Set x attribute """
-
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        elif value < 0:
-            raise ValueError("x must be > 0")
-        else:
-            self.__x = value
+        self.validate("x", value)
+        self.__x = value
 
     @property
     def y(self):
@@ -74,10 +68,9 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ Set attribute """
+        self.validate("y", value)
+        self.__y = value
 
-        if isinstance(value, int):
-            raise TypeError("y must be and integer")
-        elif value < 0:
-            raise ValueError("y must be > 0")
-        else:
-            self.__y = value
+    def area(self):
+        """define area module to return value of the Rectangle instance."""
+        return self.__width * self.__height
