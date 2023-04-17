@@ -5,6 +5,7 @@ classes which handle id attribute
 """
 import json
 import csv
+import turtle
 
 
 class Base:
@@ -102,3 +103,30 @@ class Base:
                 return inst_list
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """ Draw rectangle and square using turtle graphing """
+        screen = turtle.Screen()
+        turtle.setup(800, 600)
+        turtle.penup()
+        turtle.speed(0)
+        for rect in list_rectangles:
+            turtle.goto(rect.x, rect.y)
+            turtle.pendown()
+            turtle.setheading(0)
+            for i in range(2):
+                turtle.forward(rect.width)
+                turtle.right(90)
+                turtle.forward(rect.height)
+                turtle.right(90)
+            turtle.penup()
+        for square in list_squares:
+            turtle.goto(square.x, square.y)
+            turtle.pendown()
+            turtle.setheading(0)
+            for i in range(4):
+                turtle.forward(square.width)
+                turtle.right(90)
+            turtle.penup()
+        turtle.exitonclick()
