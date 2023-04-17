@@ -76,9 +76,14 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """display the rectangle using # characters"""
+        """
+        display the rectangle using # characters
+        amended to consider x and y
+        """
+        for i in range(self.y):
+            print()
         for i in range(self.height):
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """return [Rectangle] (12) 2/1 - 4/6 as example for id=12, x=2,
