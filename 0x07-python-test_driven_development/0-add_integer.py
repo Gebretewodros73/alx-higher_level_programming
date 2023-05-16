@@ -5,13 +5,7 @@
         b: int, optional, default value is 98
 """
 def add_integer(a, b=98):
-    """Function that adds 2 integers.
-    Args:
-        a: int
-        b: int, optional, default value is 98
-    Returns:
-        The sum of a and b as an integer.
-    Raises:
+    """ Raises:
         TypeError: if a or b is not an integer or float.
     """
 
