@@ -347,7 +347,7 @@ const myObject = {
   type: 'object',
   value: 12
 };
-
+```
 - You are not allowed to use `var`.
 
 **Usage:**
@@ -356,9 +356,161 @@ const myObject = {
 
 { type: 'object', value: 12 }
 
-{ type: 'object', value: 89 }```
+{ type: 'object', value: 89 }
 
 **File:** [12-object.js](./12-object.js)
 
+### 13. Add file to array
+
+**Mandatory**
+
+Write a script that imports a dictionary of occurrences by user id from a JSON file.
+
+- Your script must take one argument: the path to the JSON file.
+- The dictionary must be stored in the `dict` variable.
+- You must use the `readFileSync` function of the `fs` module.
+Your script must import the dictionary like this: `const dict = require(...);`.
+
+13-main.js
+
+```
+#!/usr/bin/node
+const add = require('./13-add').add;
+console.log(add(3, 5));
+```
+
+**Usage:**
+
+$./13-main.js
+
+8
+
+**File:** [13-add.js](./13-add.js)
+
+
 ## Advanced Tasks
 
+### 14. Const or Not Const
+
+**Advanced**
+
+Write a script that modifies the value of `myVar` to `333`.
+
+100-main.js
+
+```
+#!/usr/bin/node
+myVar = 89;
+require('./100-let_me_const')
+console.log(myVar);
+```
+
+**Usage:**
+
+$ ./100-main.js
+
+333
+
+**File:** [100-let_me_const.js](./100-let_me_const.js)
+
+### 15. Call me Moby
+
+**Advanced**
+
+Write a function that executes `x` times a function.
+
+- The function must be visible from outside.
+- Prototype: `function (x, theFunction)`.
+- You are not allowed to use `var`
+
+101-main.js
+
+```
+#!/usr/bin/node
+const callMeMoby = require('./101-call_me_moby').callMeMoby;
+callMeMoby(3, function () {
+  console.log('C is fun');
+});
+```
+
+**Usage:**
+
+$./101-main.js
+
+C is fun
+
+C is fun
+
+C is fun
+
+**File:** [101-call_me_moby.js](./101-call_me_moby.js)
+
+### 16. Add me maybe
+
+**Advanced**
+
+Write a function that increments and calls a function.
+
+- The function must be visible from outside.
+- Prototype: `function (number, theFunction)`.
+- You are not allowed to use `var`
+
+102-main.js
+
+```
+#!/usr/bin/node
+const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
+addMeMaybe(4, function (nb) {
+  console.log('New value: ' + nb);
+});
+```
+
+**Usage:**
+
+$./102-main.js
+
+New value: 5
+
+**File:** [102-add_me_maybe.js](./102-add_me_maybe.js)
+
+### 17. Increment object
+
+**Advanced**
+
+Update this script by adding a new function incr that increments the integer value.
+
+- You are not allowed to use `var`
+
+103-main.js
+
+```
+#!/usr/bin/node
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+```
+
+**Usage:**
+
+$ ./103-object_fct.js
+
+{ type: 'object', value: 12 }
+
+{ type: 'object', value: 13, incr: [Function] }
+
+{ type: 'object', value: 14, incr: [Function] }
+
+{ type: 'object', value: 15, incr: [Function] }
+
+**File:** [103-object_fct.js](./103-object_fct.js)
