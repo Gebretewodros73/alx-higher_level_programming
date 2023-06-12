@@ -16,4 +16,5 @@ Write a script that prints "JavaScript is amazing".
 
 **Usage:**
 $ ./0-javascript_is_amazing.js
-    JavaScript is amazing
+    
+JavaScript is amazing
