@@ -156,3 +156,87 @@ My number: 89
 $ ./5-to_integer.js School
 
 Not a number
+
+
+**File:** [5-to_integer.js](./5-to_integer.js)
+
+### 6. Loop to languages
+
+**Mandatory**
+
+Write a script that prints 3 lines: "C is fun", "Python is cool", and "JavaScript is amazing".
+
+- You must use an array of strings and a loop.
+- You are not allowed to use `var`.
+- You must use `console.log(...)` to print the output.
+
+**Usage:**
+
+/0x12$ ./6-multi_languages_loop.js
+
+C is fun
+
+Python is cool
+
+JavaScript is amazing
+
+
+**File:** [6-multi_languages_loop.js](./6-multi_languages_loop.js)
+
+### 7. I love C
+
+**Mandatory**
+
+Write a script that prints "C is fun" `x` times, where `x` is the first argument passed to the script.
+
+- If the first argument can't be converted to a number, print "Missing number of occurrences".
+- You must use a loop (`while`, `for`, etc.).
+- You are not allowed to use `var`.
+- You must use `console.log(...)` to print the output.
+
+**Usage:**
+
+$ ./7-multi_c.js 2
+
+C is fun
+
+C is fun
+
+$ ./7-multi_c.js
+
+Missing number of occurrences
+
+$ ./7-multi_c.js -3
+
+$
+
+
+**File:** [7-multi_c.js](./7-multi_c.js)
+
+### 8. Square
+
+**Mandatory**
+
+Write a script that prints a square.
+
+- The first argument is the size of the square.
+- If the first argument can't be converted to a number, print "Missing size".
+- You must use the character `X` to print the square.
+- You must use `console.log(...)` to print each line of the square.
+- You are not allowed to use `var`.
+
+**Usage:**
+
+$ ./8-square.js 2
+XX
+XX
+
+$ ./8-square.js 5
+XXXXX
+XXXXX
+XXXXX
+XXXXX
+XXXXX
+
+$ ./8-square.js
+Missing size
