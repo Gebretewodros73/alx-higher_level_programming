@@ -356,7 +356,7 @@ const myObject = {
 
 { type: 'object', value: 12 }
 
-{ type: 'object', value: 89 }
+{ type: 'object', value: 89 }```
 
 **File:** [12-object.js](./12-object.js)
 
