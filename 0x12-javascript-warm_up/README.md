@@ -73,3 +73,86 @@ Argument found
 $./2-arguments.js Best School
 
 Arguments found
+
+
+**File:** [2-arguments.js](./2-arguments.js)
+
+### 3. Value of my argument
+
+**Mandatory**
+
+Write a script that prints the first argument passed to it:
+
+- If no arguments are passed to the script, print "No argument".
+- You must use `console.log(...)` to print the output.
+- You are not allowed to use `var`.
+- You are not allowed to use `length`.
+
+**Usage:**
+$ ./3-value_argument.js
+
+No argument
+
+$ ./3-value_argument.js School
+
+School
+
+
+**File:** [3-value_argument.js](./3-value_argument.js)
+
+### 4. Create a sentence
+
+**Mandatory**
+
+Write a script that prints two arguments passed to it in the following format: "arg1 is arg2".
+
+- You must use `console.log(...)` to print the output.
+- You are not allowed to use `var`.
+
+**Usage:**
+$ ./4-concat.js c cool
+
+c is cool
+
+$ ./4-concat.js c
+
+c is undefined
+
+$ ./4-concat.js
+
+undefined is undefined
+
+
+**File:** [4-concat.js](./4-concat.js)
+
+### 5. An Integer
+
+**Mandatory**
+
+Write a script that prints "My number: <first argument converted to an integer>" if the first argument can be converted to an integer.
+
+- If the argument can't be converted to an integer, print "Not a number".
+- You must use `console.log(...)` to print the output.
+- You are not allowed to use `var`.
+- You are not allowed to use `try/catch`.
+
+**Usage:**
+$ ./5-to_integer.js
+
+Not a number
+
+$ ./5-to_integer.js 89
+
+My number: 89
+
+$ ./5-to_integer.js "89"
+
+My number: 89
+
+$ ./5-to_integer.js 89.89
+
+My number: 89
+
+$ ./5-to_integer.js School
+
+Not a number
