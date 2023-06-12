@@ -36,7 +36,40 @@ You must use `console.log(...)` to print the output.
 You are not allowed to use `var`.
 
 **Usage:**
-./1-multi_languages.js 
+./1-multi_languages.js
+
 C is fun
+
 Python is cool
+
 JavaScript is amazing
+
+
+**File:** [1-multi_languages.js](./1-multi_languages.js)
+
+### 2. Arguments
+
+**Mandatory**
+
+Write a script that prints a message depending on the number of arguments passed:
+
+- If no arguments are passed to the script, print "No argument".
+- If only one argument is passed to the script, print "Argument found".
+- Otherwise, print "Arguments found".
+
+You must use `console.log(...)` to print the output.
+You are not allowed to use `var`.
+You can use the `process.argv` array to access the script arguments.
+
+**Usage:**
+$./2-arguments.js
+
+No argument
+
+$./2-arguments.js Best
+
+Argument found
+
+$./2-arguments.js Best School
+
+Arguments found
