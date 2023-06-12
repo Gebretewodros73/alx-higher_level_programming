@@ -15,8 +15,8 @@ Write a script that prints "JavaScript is amazing".
 - You are not allowed to use `var`.
 
 **Usage:**
-$ ./0-javascript_is_amazing.js
-    
+
+$ ./0-javascript_is_amazing.js\n
 JavaScript is amazing
 
 
@@ -36,14 +36,11 @@ You must use `console.log(...)` to print the output.
 You are not allowed to use `var`.
 
 **Usage:**
-./1-multi_languages.js
 
-C is fun
-
-Python is cool
-
+./1-multi_languages.js\n
+C is fun\n
+Python is cool\n
 JavaScript is amazing
-
 
 **File:** [1-multi_languages.js](./1-multi_languages.js)
 
@@ -62,18 +59,15 @@ You are not allowed to use `var`.
 You can use the `process.argv` array to access the script arguments.
 
 **Usage:**
-$./2-arguments.js
 
+$./2-arguments.js\n
 No argument
 
-$./2-arguments.js Best
-
+$./2-arguments.js Best\n
 Argument found
 
-$./2-arguments.js Best School
-
+$./2-arguments.js Best School\n
 Arguments found
-
 
 **File:** [2-arguments.js](./2-arguments.js)
 
@@ -89,14 +83,12 @@ Write a script that prints the first argument passed to it:
 - You are not allowed to use `length`.
 
 **Usage:**
-$ ./3-value_argument.js
 
+$ ./3-value_argument.js\n
 No argument
 
-$ ./3-value_argument.js School
-
+$ ./3-value_argument.js School\n
 School
-
 
 **File:** [3-value_argument.js](./3-value_argument.js)
 
@@ -110,18 +102,15 @@ Write a script that prints two arguments passed to it in the following format: "
 - You are not allowed to use `var`.
 
 **Usage:**
-$ ./4-concat.js c cool
 
+$ ./4-concat.js c cool\n
 c is cool
 
-$ ./4-concat.js c
-
+$ ./4-concat.js c\n
 c is undefined
 
-$ ./4-concat.js
-
+$ ./4-concat.js\n
 undefined is undefined
-
 
 **File:** [4-concat.js](./4-concat.js)
 
@@ -137,26 +126,21 @@ Write a script that prints "My number: <first argument converted to an integer>"
 - You are not allowed to use `try/catch`.
 
 **Usage:**
-$ ./5-to_integer.js
 
+$ ./5-to_integer.js\n
 Not a number
 
-$ ./5-to_integer.js 89
-
+$ ./5-to_integer.js 89\n
 My number: 89
 
-$ ./5-to_integer.js "89"
-
+$ ./5-to_integer.js "89"\n
 My number: 89
 
-$ ./5-to_integer.js 89.89
-
+$ ./5-to_integer.js 89.89\n
 My number: 89
 
-$ ./5-to_integer.js School
-
+$ ./5-to_integer.js School\n
 Not a number
-
 
 **File:** [5-to_integer.js](./5-to_integer.js)
 
@@ -172,12 +156,10 @@ Write a script that prints 3 lines: "C is fun", "Python is cool", and "JavaScrip
 
 **Usage:**
 
-/0x12$ ./6-multi_languages_loop.js
-
+/0x12$ ./6-multi_languages_loop.js\n
 C is fun
 
-Python is cool
-
+Python is cool\n
 JavaScript is amazing
 
 
@@ -196,18 +178,14 @@ Write a script that prints "C is fun" `x` times, where `x` is the first argument
 
 **Usage:**
 
-$ ./7-multi_c.js 2
-
+$ ./7-multi_c.js 2\n
+C is fun\n
 C is fun
 
-C is fun
-
-$ ./7-multi_c.js
-
+$ ./7-multi_c.js\n
 Missing number of occurrences
 
-$ ./7-multi_c.js -3
-
+$ ./7-multi_c.js -3\n
 $
 
 
@@ -227,16 +205,16 @@ Write a script that prints a square.
 
 **Usage:**
 
-$ ./8-square.js 2
-XX
+$ ./8-square.js 2\n
+XX\n
 XX
 
-$ ./8-square.js 5
-XXXXX
-XXXXX
-XXXXX
-XXXXX
-XXXXX
+$ ./8-square.js 5\n
+XXXXX\n
+XXXXX\n
+XXXXX\n
+XXXXX\n
+XXXXX\n
 
-$ ./8-square.js
+$ ./8-square.js\n
 Missing size
