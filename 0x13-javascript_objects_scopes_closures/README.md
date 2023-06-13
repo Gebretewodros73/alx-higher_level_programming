@@ -45,10 +45,6 @@ The repository consists of the following files:
 Feel free to explore each file and refer to the code and comments for more details on each topic or task.
 
 
-## Requirements
-
-The JavaScript files are written for Node.js and require a minimum version of v10. It is recommended to have Node.js v12 or higher installed.
-
 ## Usage
 
 To use the code in this repository, follow these steps:
