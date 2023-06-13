@@ -49,7 +49,7 @@ Feel free to explore each file and refer to the code and comments for more detai
 
 To use the code in this repository, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/0x13-javascript_objects_scopes_closures.git`
+1. Clone the repository: `git clone https://github.com/gebretewodros73/0x13-javascript_objects_scopes_closures.git`
 2. Navigate to the repository directory: `cd 0x13-javascript_objects_scopes_closures/main`
 3. Run the JavaScript files using a JavaScript runtime or interpreter such as Node.js: `node <filename.js>`
 
