@@ -6,9 +6,8 @@ This repository contains solutions to the "JavaScript Objects, Scopes, and Closu
 
 1. [Introduction](#introduction)
 2. [File Descriptions](#file-descriptions)
-3. [Requirements](#Requirements)
-4. [Usage](#usage)
-5. [Authors](#Authors)
+3. [Usage](#usage)
+4. [Authors](#Authors)
 
 ## Introduction
 
@@ -52,12 +51,14 @@ The JavaScript files are written for Node.js and require a minimum version of v1
 
 ## Usage
 
-To use any of the JavaScript files, you can run them using Node.js. For example:
+To use the code in this repository, follow these steps:
 
-$ node 0-rectangle.js
+1. Clone the repository: `git clone https://github.com/your-username/0x13-javascript_objects_scopes_closures.git`
+2. Navigate to the repository directory: `cd 0x13-javascript_objects_scopes_closures/main`
+3. Run the JavaScript files using a JavaScript runtime or interpreter such as Node.js: `node <filename.js>`
 
+Make sure you have Node.js installed on your machine before running the JavaScript files.
 
-This will execute the code in the `0-rectangle.js` file and display the output, if any.
 
 ## Authors
 
