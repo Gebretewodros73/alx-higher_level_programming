@@ -34,7 +34,7 @@ The repository consists of the following files:
 5. [4-rectangle.js](./4-rectangle.js): A class `Rectangle` with a constructor, methods `print()`, `rotate()`, and `double()`, which rotate the rectangle, double its dimensions, and print it respectively.
 6. [5-square.js](./5-square.js): A class `Square` that extends the `Rectangle` class and initializes both the `width` and `height` properties to the same value.
 7. [6-square.js](/6-square.js): A class `SquareWithCharPrint` that extends the `Square` class and adds a method `charPrint(c)` to print the square using a specific character.
-8.][7-occurrences.js](./7-occurrences.js): A function `nbOccurences(list, searchElement)` that returns the number of occurrences of `searchElement` in `list`.
+8. [7-occurrences.js](./7-occurrences.js): A function `nbOccurences(list, searchElement)` that returns the number of occurrences of `searchElement` in `list`.
 9. [8-esrever.js](./8-esrever.js): A function `esrever(list)` that returns a reversed version of `list`.
 10. [9-logme.js](./9-logme.js): A function `logMe(item)` that prints an item and keeps track of the number of times it has been called.
 11. [10-converter.js](./10-converter.js): A function `converter(base)` that returns a function that converts a number to the specified base.
