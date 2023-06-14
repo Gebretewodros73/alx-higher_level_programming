@@ -50,15 +50,22 @@ Feel free to explore each file and refer to the code and comments for more detai
 To use the code in this repository, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/gebretewodros73/0x13-javascript_objects_scopes_closures.git 
+
 From 0 - 11
+
 1. Navigate to the repository directory: `cd 0x13-javascript_objects_scopes_closures/main`
 2. Run the JavaScript files using a JavaScript runtime or interpreter such as Node.js: `node <filename.js>`
+
 From 12 - 13
+
 1. Navigate to the repository directory: `cd 0x13-javascript_objects_scopes_closures
 2. Run the JavaScript files using a JavaScript runtime or interpreter such as Node.js: `node 100-map.js` or `101-sorted.js`
+
 For 14
+
 1. Navigate to the repository directory: `cd 0x13-javascript_objects_scopes_closures.
 2. Run the JavaScript files using a JavaScript runtime or interpreter such as Node.js: `node 100-concat.js file/fileA file/fileB file/fileC`
+
 Make sure you have Node.js installed on your machine before running the JavaScript files.
 
 
