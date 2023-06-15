@@ -33,7 +33,7 @@ To install the required modules, follow the instructions below:
    $ sudo apt-get install python3-dev
    $ sudo apt-get install libmysqlclient-dev
    $ sudo apt-get install zlib1g-dev
-```
+
 1. Install MySQLdb:
 ```
 $ sudo pip3 install mysqlclient
@@ -89,7 +89,7 @@ Here are a few examples demonstrating the usage of the scripts:
 1. To list all states:
    ```bash
    $ ./0-select_states.py mysql_username mysql_password database_name
-```
+
 2. To list states starting with the letter "N":
 ```
 $ ./2-my_filter_states.py mysql_username mysql_password database_name Arizona
