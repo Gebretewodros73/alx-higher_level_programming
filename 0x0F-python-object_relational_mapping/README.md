@@ -67,6 +67,7 @@ The project directory has the following structure:
 ├── 3-my_safe_filter_states.py
 ├── 4-cities_by_state.py
 └── README.md
+```
 * Each Python script corresponds to a specific task and accepts command-line arguments.
 * `README.md` file provides an overview of the project, installation instructions, and project structure.
 ## Usage
