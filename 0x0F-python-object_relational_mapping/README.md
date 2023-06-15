@@ -32,8 +32,8 @@ To install the required modules, follow the instructions below:
    ```bash
    $ sudo apt-get install python3-dev
    $ sudo apt-get install libmysqlclient-dev
-   $ sudo apt-get install zlib1g-dev
-```
+   $ sudo apt-get install zlib1g-dev ```
+
 1. Install MySQLdb:
 ```
 $ sudo pip3 install mysqlclient
