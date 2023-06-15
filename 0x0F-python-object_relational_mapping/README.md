@@ -58,6 +58,7 @@ $ python3
 '1.4.22'
 ```
 ## Project Structure
+```
 The project directory has the following structure:
 0x0F-python-object_relational_mapping/
 ├── 0-select_states.py
