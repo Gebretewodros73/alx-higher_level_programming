@@ -91,11 +91,11 @@ $ ./script_name.py mysql_username mysql_password database_name [additional_argum
 Replace `script_name.py` with the name of the desired script and provide the necessary command-line arguments.
 ## Tasks
 The project consists of the following tasks:
-1. `0-select_states.py`: Lists all states from the database `hbtn_0e_0_usa` using MySQLdb.
-2. `1-filter_states.py`: Lists states starting with the letter "N" from the database `hbtn_0e_0_usa` using MySQLdb.
-3. `2-my_filter_states.py`: Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb.
-4. `3-my_safe_filter_states.py`: Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb, but with safe from SQL injection.
-5. `4-cities_by_state.py`: Lists all cities from the database `hbtn_0e_4_usa` using SQLAlchemy.
+1. [0-select_states.py](./0-select_states.py): Lists all states from the database `hbtn_0e_0_usa` using MySQLdb.
+2. [1-filter_states.py](./1-filter_states.py): Lists states starting with the letter "N" from the database `hbtn_0e_0_usa` using MySQLdb.
+3. [2-my_filter_states.py](./2-my_filter_states.py): Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb.
+4. [3-my_safe_filter_states.py](./3-my_safe_filter_states.py): Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb, but with safe from SQL injection.
+5. [4-cities_by_state.p](./4-cities_by_state.py): Lists all cities from the database `hbtn_0e_4_usa` using SQLAlchemy.
 
 ## Examples
 
