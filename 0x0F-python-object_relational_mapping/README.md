@@ -96,7 +96,19 @@ The project consists of the following tasks:
 3. [2-my_filter_states.py](./2-my_filter_states.py): Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb.
 4. [3-my_safe_filter_states.py](./3-my_safe_filter_states.py): Displays states from the database `hbtn_0e_0_usa` that match a given input using MySQLdb, but with safe from SQL injection.
 5. [4-cities_by_state.p](./4-cities_by_state.py): Lists all cities from the database `hbtn_0e_4_usa` using SQLAlchemy.
-
+6. [5-filter_cities.py](./5-filter_cities.py): takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa.
+7. [model_state.py](./model_state.py): python file that contains the class definition of a State and an instance Base = declarative_base().
+8. [7-model_state_fetch_all.py](./7-model_state_fetch_all.py): lists all State objects from the database hbtn_0e_6_usa.
+9. [8-model_state_fetch_first.py](./8-model_state_fetch_first.py): prints the first State object from the database hbtn_0e_6_usa.
+10. [9-model_state_filter_a.py](./9-model_state_filter_a.py): lists all State objects that contain the letter a from the database hbtn_0e_6_usa.
+11. [10-model_state_my_get.py](./10-model_state_my_get.py): prints the State object with the name passed as argument from the database hbtn_0e_6_usa.
+12. [11-model_state_insert.py](./11-model_state_insert.py): adds the State object “Louisiana” to the database hbtn_0e_6_usa.
+13. [12-model_state_update_id_2.py](./12-model_state_update_id_2.py): changes the name of a State object from the database hbtn_0e_6_usa.
+14. [13-model_state_delete_a.py](./13-model_state_delete_a.py): deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa.
+15. [14-model_city_fetch_by_state.py](./14-model_city_fetch_by_state.py): prints all City objects from the database hbtn_0e_14_usa.
+16. [100-relationship_states_cities.py](./100-relationship_states_cities.py): creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa.
+17. [101-relationship_states_cities_list.py](./101-relationship_states_cities_list.py): that lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa.
+18. [102-relationship_cities_states_list.py](./102-relationship_cities_states_list.py): lists all City objects from the database hbtn_0e_101_usa.
 ## Examples
 
 Here are a few examples demonstrating the usage of the scripts:
