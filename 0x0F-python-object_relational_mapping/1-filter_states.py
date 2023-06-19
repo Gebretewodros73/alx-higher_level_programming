@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script to list all states from a MySQL database using MySQLdb.
+Lists states starting with the letter "N"
+from the database hbtn_0e_0_usa using MySQLdb.
 """
 import MySQLdb
 import sys
