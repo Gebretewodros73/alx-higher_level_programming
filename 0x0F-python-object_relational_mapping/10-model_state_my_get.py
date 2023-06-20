@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Prints the State object with the name passed as an argument from the database hbtn_0e_6_usa.
+Prints the State object with the name passed as an
+argument from the database hbtn_0e_6_usa.
 """
 
 import sys
@@ -15,8 +16,10 @@ if __name__ == "__main__":
     database = sys.argv[3]
     state_name = sys.argv[4]
 
-    # Create engine and establish connection to the database
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}')
+    """Create engine and establish
+    connection to the database"""
+    engine = create_engine(f'mysql+mysqldb://{username}:\
+            {password}@localhost:3306/{database}')
 
     # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
