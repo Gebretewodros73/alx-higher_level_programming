@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Deletes all State objects with a name containing the letter 'a' from the database hbtn_0e_6_usa.
+Deletes all State objects with a name containing
+the letter 'a' from the database hbtn_0e_6_usa.
 """
 
 import sys
@@ -15,7 +16,8 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     # Create engine and establish connection to the database
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}')
+    engine = create_engine(f'mysql+mysqldb://{username}:\
+            {password}@localhost:3306/{database}')
 
     # Create all tables defined in the Base
     Base.metadata.create_all(engine)
