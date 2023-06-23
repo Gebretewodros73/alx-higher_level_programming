@@ -2,6 +2,18 @@
 
 This project focuses on connecting Python with databases using Object-Relational Mapping (ORM). It utilizes modules such as MySQLdb and SQLAlchemy to interact with a MySQL database, execute SQL queries, and perform CRUD operations using Python code instead of writing raw SQL queries.
 
+## Table of contents
+1. [Learning Objectives](#learning-objectives)
+2. [Requirements](#reqirements)
+3. [Installation](#installation)
+4. [MySQLdb](#mysqldb)
+5. [SQLAlchemy](#sqlalchemy)
+6. [Project Structure](#Project-Structure)
+7. [Usage](#Usage)
+8. [Tasks](#Tasks)
+9. [Examples](#Examples)
+10. [Conclusion](#Conclusion)
+
 ## Learning Objectives
 
 By completing this project, i have  gain knowledge and understanding of the following:
