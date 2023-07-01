@@ -4,6 +4,7 @@ Module: 6-peak
 Contains function find_peak
 """
 
+
 def find_peak(list_of_integers):
     """
     Finds a peak in a list of unsorted integers.
@@ -15,7 +16,8 @@ def find_peak(list_of_integers):
         int: A peak value from the list, or None if the list is empty.
 
     Complexity:
-        The algorithm has a time complexity of O(log(n)), where n is the length of the list.
+        The algorithm has a time complexity of O(log(n)),
+        where n is the length of the list.
     """
     if not list_of_integers:
         return None
