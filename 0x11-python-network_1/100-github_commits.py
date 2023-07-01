@@ -25,4 +25,3 @@ if __name__ == "__main__":
             print(f"{sha}: {author_name}")
     except ValueError:
         print("Error: Invalid JSON response")
-
