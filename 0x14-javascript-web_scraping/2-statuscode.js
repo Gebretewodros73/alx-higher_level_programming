@@ -1,10 +1,11 @@
 #!/usr/bin/node
-const axios = require('axios');
+const fs = require('fs');
 
 function displayStatusCode (url) {
-  axios.get(url)
+  fs.get(url)
     .then((response) => {
-      console.log(`code: ${response.status}`);
+      const statusCode = response.status;
+      console.log(`code: ${statusCode}`);
     })
     .catch((error) => {
       console.error(`Error: ${error.message}`);
