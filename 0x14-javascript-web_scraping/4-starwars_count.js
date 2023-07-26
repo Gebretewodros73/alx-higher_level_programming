@@ -1,23 +1,24 @@
 #!/usr/bin/node
-const fs = require('fs');
 
-function countMoviesWithCharacter (apiURL) {
-  const characterID = 18; // Wedge Antilles character ID
-  const url = `${apiURL}${characterID}/`;
+let url = process.argv[2];
+const request = require('request');
 
-  fs.get(url)
-    .then((response) => {
-      console.log(response.data.films.length);
-    })
-    .catch((error) => {
-      console.error(`Error: ${error.message}`);
-    });
-}
-
-// Check if the script is run from the command line with the API URL argument
-if (process.argv.length !== 3) {
-  console.error('Usage: ./4-starwars_count.js <API_URL>');
-} else {
-  const apiURL = process.argv[2];
-  countMoviesWithCharacter(apiURL);
-}
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
+    let films = JSON.parse(body).results;
+    let count = 0;
+    for (let i in films) {
+      let chars = films[i].characters;
+      for (let c in chars) {
+	if (chars[c].includes('18')) {
+	  count++;
+	}
+      }
+    }
+    console.log(count);
+  } else {
+    console.log('Erorr Code:' + response.statusCode);
+  }
+});
