@@ -1,13 +1,13 @@
 #!/usr/bin/node
-const fs = require('fs');
+const https = require('https');
 
-function displayStatusCode (url) {
-  fs.get(url)
-    .then((response) => {
-      const statusCode = response.status;
+function displayStatusCode(url) {
+  https
+    .get(url, (response) => {
+      const statusCode = response.statusCode;
       console.log(`code: ${statusCode}`);
     })
-    .catch((error) => {
+    .on('error', (error) => {
       console.error(`Error: ${error.message}`);
     });
 }
