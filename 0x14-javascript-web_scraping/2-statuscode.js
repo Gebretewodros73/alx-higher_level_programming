@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const https = require('https');
 
-function displayStatusCode(url) {
+function displayStatusCode (url) {
   https
     .get(url, (response) => {
       const statusCode = response.statusCode;
