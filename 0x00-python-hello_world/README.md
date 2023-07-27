@@ -88,7 +88,7 @@ This directory contains a collection of Python scripts that explore various prog
 
 ## Task 13: ByteCode -> Python #1
 * Description: This Python function `magic_calculation(a, b)` does exactly the same as the given Python bytecode.
-* File: 102-magic_calculation.py
+* File: [102-magic_calculation.py](./102-magic_calculation.py)
 
 ## Conclusion
 This directory contains a diverse set of Python and C scripts that demonstrate different programming concepts and problem-solving skills. Each script serves as a valuable learning resource for individuals seeking to enhance their knowledge and skills in high-level programming languages. Feel free to explore the scripts, engage with the challenges, and expand your understanding of Python and C programming concepts. Enjoy your learning experience and happy coding!
