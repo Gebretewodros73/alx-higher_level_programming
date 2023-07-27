@@ -65,7 +65,7 @@ The "databases" directory contains materials related to databases and SQL. It co
 - [0X0D. SQL - Introduction](./0x0D-SQL_introduction)
 - [0X0E. SQL - More queries](./0x0E-SQL_more_queries)
 
-### AirBnB Clone
+<!-- ### AirBnB Clone
 The "airbnb_clone" directory focuses on building an AirBnB clone. It covers various aspects of the project, including the console, web static, MySQL integration, and deploying the static files.
 
 #### Contents of "airbnb_clone" directory:
@@ -74,6 +74,7 @@ The "airbnb_clone" directory focuses on building an AirBnB clone. It covers vari
 - [0x02. AirBnB clone - MySQL integration](./AirBnB_clone_v2)
 - [0x03. AirBnB clone - Deploy static](./AirBnB_clone_v2)
 - [0x04. AirBnB clone - Web framework](./AirBnB_clone_v2/web_flask)
+-->
 
 Each directory contains its own README file with a detailed explanation of the materials included and instructions on how to use them effectively.
 
@@ -81,4 +82,3 @@ Each directory contains its own README file with a detailed explanation of the m
 The "alx-higher_level_programming" repository serves as a valuable resource for individuals seeking to enhance their knowledge and skills in high-level programming languages. Whether you are a student, a professional developer, or an enthusiast, the materials in this repository will guide you through the journey of becoming proficient in Python, JavaScript, and Ruby.
 
 Feel free to explore the directories, engage with the exercises and projects, and expand your understanding of high-level programming concepts. Enjoy your learning experience and happy coding!
-
