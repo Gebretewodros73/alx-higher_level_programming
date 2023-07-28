@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module : returns the rectangle area and perimeter
+"""
+
+
 class Rectangle:
     """A class representing a rectangle."""
 
@@ -51,7 +56,8 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __str__(self):
-        """Return a string representation of the rectangle using '#' characters."""
+        """Return a string representation of the
+        rectangle using '#' characters."""
         if self.__width == 0 or self.__height == 0:
             return ""
         rect_str = "#" * self.__width
