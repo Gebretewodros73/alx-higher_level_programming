@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
@@ -41,4 +42,3 @@ class Rectangle:
             return ""
         rect_str = "#" * self.__width
         return "\n".join(rect_str for _ in range(self.__height))
-
