@@ -43,3 +43,16 @@ This task involves writing a JavaScript script named `8-script.js` that fetches 
 In this task, a JavaScript script named `9-script.js` is written to fetch the value of "hello" from the URL `https://fourtonfish.com/hellosalut/?lang=fr` and display the translation of "hello" in the HTML tag `DIV#hello`. The script uses the JQuery API to perform the API request and display the translated "hello" in the specified tag.
 
 Please note that all scripts should be tested with the corresponding HTML files mentioned in the task descriptions to ensure their functionality in the browser.
+
+## Task 10: No jQuery - document loaded
+
+In this advanced task, a JavaScript script named `100-script.js` is written to update the text color of the `<header>` element to red (#FF0000) using `document.querySelector` without using the JQuery API. The script is imported from the `<head>` tag and modifies the style of the `<header>` element upon document load.
+
+## Task 11: List, add, remove
+
+In this advanced task, a JavaScript script named `101-script.js` is written to add, remove, and clear `<li>` elements from a list when the user clicks on specific elements. The script uses the JQuery API to add click event handlers to `DIV#add_item`, `DIV#remove_item`, and `DIV#clear_list`, and upon clicking, it adds, removes, or clears `<li>` elements from the list accordingly.
+
+## Task 12: Say hello to everybody!
+
+This advanced task involves writing a JavaScript script named `102-script.js` that fetches and prints how to say "Hello" depending on the language. The script uses the JQuery API to
+
