@@ -54,5 +54,8 @@ In this advanced task, a JavaScript script named `101-script.js` is written to a
 
 ## Task 12: Say hello to everybody!
 
-This advanced task involves writing a JavaScript script named `102-script.js` that fetches and prints how to say "Hello" depending on the language. The script uses the JQuery API to
+This advanced task involves writing a JavaScript script named `102-script.js` that fetches and prints how to say "Hello" depending on the language. The script uses the JQuery API to fetch the translation from `https://www.fourtonfish.com/hellosalut/hello/` based on the language code entered in `INPUT#language_code`, and the translation of "Hello" is displayed in the HTML tag `DIV#hello` upon clicking `INPUT#btn_translate`.
 
+## Task 13: And press ENTER
+
+In this advanced task, a JavaScript script named `103-script.js` is written to fetch and print how to say "Hello" depending on the language. The script uses the JQuery API to fetch the translation from `https://www.fourtonfish.com/hellosalut/hello/` based on the language code entered in `INPUT#language_code`, and the translation of "Hello" is displayed in the HTML tag `DIV#hello` upon clicking `INPUT#btn_translate` or pressing ENTER when the focus is on `INPUT#language_code`.
