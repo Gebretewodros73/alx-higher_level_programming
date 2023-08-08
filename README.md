@@ -51,6 +51,7 @@ The "javascript" directory includes resources for learning JavaScript from scrat
 - [0x12. JavaScript - Warm up](./0x12-javascript-warm_up)
 - [0X13. JavaScript - Objects, Scopes, and Closures](./0x13-javascript_objects_scopes_closures)
 - [0x14. JavaScript - Web scraping](./0x14-javascript-web_scraping)
+- [0x15-javascript-web_jquery](./0x15-javascript-web_jquery)
 
 <!-- ### Ruby
 The "ruby" directory focuses on the Ruby programming language. It provides tutorials and exercises that explore Ruby's syntax, object-oriented features, metaprogramming capabilities, and frameworks like Ruby on Rails for web development.
